@@ -25,7 +25,7 @@ section .box {
 }
 
 .bg-light {
-    background-color: #fff;
+    background-color: #e7eacb;
 }
 
 .bg-light .heading h2 {
@@ -43,10 +43,10 @@ section .box {
 }
 
 .bg-dark .heading h2 {
-    color: #ffff;
+    color: #e7eacb;
 }
 .bg-dark .title {
-    color: #fff;
+    color: #e7eacb;
 }
 .bg-dark p {
     color: #aaa;
@@ -96,7 +96,7 @@ section .box {
 .about-img .img img {
     position: relative;
     z-index: 2;
-    background: #1b1b1b;
+    background: #8a2be2;
     height: 300px;
 }
 
@@ -126,8 +126,8 @@ section .box {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #444;
-    color: #fff;
+    background-color: #8a2be2;
+    color: #8a2be2;
     font-size: 12px;
 }
 
@@ -265,8 +265,8 @@ section .box {
 }
 .gallery .active,
     .gallery li:hover{
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    color: #e7eacb;
+    border-bottom: 1px solid #e7eacb;
 }
 
 .grid-wrapper {
@@ -365,7 +365,7 @@ section .box {
     position: absolute;
     top: 30px;
     left: 30px;
-    background-color: #b506066b;
+    background-color: #8a2be2;
     height: 100%;
     width: 100%;
     z-index: 0;
@@ -385,7 +385,7 @@ section .box {
 
 .contact .form-box h2 {
     font-size: 22px;
-    color: #fffefe;
+    color: #e7eacb;
 }
 
 
@@ -410,7 +410,7 @@ section .box {
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 0rem;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #e7eacb;
     border-radius: 1px;
 }
 
@@ -422,7 +422,7 @@ section .box {
 }
 
 .contact .box-input i {
-    color: #ffffff;
+    color: #e7eacb;
 }
 
 .contact .box-input textarea,
@@ -431,7 +431,7 @@ section .box {
     font-size: 14px;
     border: none;
     background-color: transparent;
-    color: #ffffff;
+    color: #e7eacb;
 }
 
 .contact .box-input textarea {
@@ -441,15 +441,25 @@ section .box {
 
 .contact .box-input textarea::placeholder,
 .contact .box-input input::placeholder {
-    color: #ffffff;
+    color: #e7eacb;
     font-size: 12px;
     text-transform: capitalize;
 }
 
 
+contact-title{
+    color: #8a2be2;
+}
+
+.contact bg-light{
+    color: #8a2be2;
+    background-color: #e7eacb;
+
+}
+
 .btn-send {
-    background-color: #fffefe;
-    color: #0b0b0b;
+    background-color: #e7eacb;
+    color: #282424;
     padding: 0.75rem 1rem;
     border: none;
 }
