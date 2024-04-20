@@ -20,7 +20,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.75em;
-    color: #999;
+    color: #e7eacb;
     overflow-x: hidden !important;
     background: #fff;
 }
@@ -211,7 +211,7 @@ img {
 
 .header .box .btn {
     padding: 0.25rem 1rem;
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
     margin-right: 1rem;
     text-decoration: none;
     font-family: 'Jost', sans-serif;
