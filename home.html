@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -131,73 +132,113 @@
 
 
     <!-- Works Gallery -->
-    <section class="gallery bg-dark" id="works">
-        <div class="heading">
-            <h2 class="title">Gallery</h2>
-        </div>
-        <div class="container">
-            <ul id="filter">
-                <li class="active" onclick="filterImages('.all')">All</li>
-                <li onclick="filterImages('.personal')">Personal</li>
-                <li onclick="filterImages('.cars')">Cars</li>
-                <li onclick="filterImages('.sunrises')">Sunrises</li>
-                <li onclick="filterImages('.sunsets')">Sunsets</li>
-                <li onclick="filterImages('.cities&towns')">Cities & Towns</li>
-            </ul>
-        </div>
+<!--    <section class="gallery bg-dark" id="works">-->
+<!--        <div class="heading">-->
+<!--            <h2 class="title">Gallery</h2>-->
+<!--        </div>-->
+<!--        <div class="container">-->
+<!--            <ul id="filter">-->
+<!--                <li class="active" data-filter=".all">Featured</li>-->
+<!--                <li onclick="filterImages('.personal')">Personal</li>-->
+<!--                <li onclick="filterImages('.cars')">Cars</li>-->
+<!--                <li onclick="filterImages('.sunrises')">Sunrises</li>-->
+<!--                <li onclick="filterImages('.sunsets')">Sunsets</li>-->
+<!--                <li onclick="filterImages('.cities&towns')">Cities & Towns</li>-->
+<!--            </ul>-->
+   <section class="gallery bg-dark" id="works">
+    <div class="heading">
+        <h2 class="title">Gallery</h2>
+    </div>
+    <div class="container">
+        <ul id="filter">
+            <li class="active" data-filter=".all">Featured</li>
+            <li data-filter=".cars">Cars</li>
+            <li data-filter=".sunrises">Sunrises</li>
+            <li data-filter=".sunsets">Sunsets</li>
+            <li data-filter=".cities">Cities & Towns</li>
+            <li data-filter=".towns">Towns</li>
+        </ul>
+    </div>
 
-        <div class="container">
-            <div class="grid-wrapper">
-                <div class="image tall" >
-                    <img src="./images/IMG_2278.jpeg" alt="" />
-                </div>
-                <div class="image wide">
-                    <img src="./images/IMG_4210.jpeg" alt="" />
-                </div>
-                <div class="image tall">
-                    <img src="./images/IMG_4563.jpeg" alt="" />
-
-                </div>
-                <div class="image" data-filter=".cars">
-                    <img src="./images/IMG_4192.jpeg" alt="" />
-
-                </div>
-                <div class="image ">
-                    <img src="./images/IMG_6150.jpeg" alt="" />
-                </div>
-                <div class="image ">
-                    <img src="./images/IMG_2425.jpeg" alt="" />
-                </div>
-
-
-
-
+    <div class="container">
+        <div class="grid-wrapper" id="imageGrid">
+            <div class="image" data-filter=".cars">
+                <img src="./images/IMG_2278.jpeg" alt="" />
+            </div>
+            <div class="image" data-filter=".cars">
+                <img src="./images/IMG_4192.jpeg" alt="" />
+            </div>
+            <div class="image" data-filter=".cars">
+                <img src="./images/IMG_6150.jpeg" alt="" />
+            </div>
+            <div class="image" data-filter=".cars">
+                <img src="./images/IMG_2425.jpeg" alt="" />
+            </div>
+            <div class="image" data-filter=".cars">
+                <img src="./images/CAR - 1.jpeg" alt="" />
+            </div>
+            <div class="image" data-filter=".cars">
+                <img src="./images/CAR -2.jpeg" alt="" />
+            </div>
+            <div class="image" data-filter=".sunsets">
+                <img src="./images/IMG_4210.jpeg" alt="" />
+            </div>
+            <div class="image" data-filter=".sunsets">
+                <img src="./images/IMG_4563.jpeg" alt="" />
+            </div>
+            <div class="image" data-filter=".sunsets">
+                <img src="./images/IMG_2673.jpeg" alt="" />
+            </div>
+            <div class="image" data-filter=".sunsets">
+                <img src="./images/IMG_2676.jpeg" alt="" />
+            </div>
+            <div class="image" data-filter=".sunsets">
+                <img src="./images/IMG_4872.jpeg" alt="" />
+            </div>
+            <div class="image" data-filter=".sunsets">
+                <img src="./images/IMG_6779.jpeg" alt="" />
+            </div>
+            <div class="image" data-filter=".sunrises">
+                <img src="./images/IMG_2081.jpeg" alt="" />
+            </div>
+            <div class="image" data-filter=".sunrises">
+                <img src="./images/IMG_2219.jpeg" alt="" />
+            </div>
+            <div class="image " data-filter=".sunrises">
+                <img src="./images/IMG_2083.jpeg" alt="" />
+            </div>
+            <div class="image " data-filter=".sunrises">
+                <img src="./images/IMG_6190.jpeg" alt="" />
+            </div>
+            <div class="image " data-filter=".cities-towns">
+                <img src="./images/IMG_6305.jpeg" alt="" />
+            </div>
+            <div class="image " data-filter=".cities-towns">
+                <img src="./images/IMG_6236.jpeg" alt="" />
+            </div>
+            <div class="image " data-filter=".cities-towns">
+                <img src="./images/IMG_5117.jpeg" alt="" />
+            </div>
+            <div class="image " data-filter=".cities-towns">
+                <img src="./images/IMG_2219.jpeg" alt="" />
+            </div>
+            <div class="image " data-filter=".towns">
+                <img src="./images/IMG_5314.jpeg" alt="" />
+            </div>
+            <div class="image " data-filter=".towns">
+                <img src="./images/IMG_5302.jpeg" alt="" />
+            </div>
+            <div class="image " data-filter=".towns">
+                <img src="./images/IMG_5231.jpeg" alt="" />
+            </div>
+            <div class="image " data-filter=".towns">
+                <img src="./images/IMG_4441.jpeg" alt="" />
             </div>
         </div>
-    </section>
-   <script>
-        // Function to filter images based on selected category
-        function filterImages(category) {
-            const images = document.querySelectorAll('.image');
-            images.forEach(image => {
-                if (category === '.all' || image.classList.contains(category)) {
-                    image.style.display = 'block';
-                } else {
-                    image.style.display = 'none';
-                }
-            });
-        }
+    </div>
+</section>
 
-        // Add event listener to the filter list
-        document.getElementById('filter').addEventListener('click', function(event) {
-            if (event.target.tagName === 'LI') {
-                const category = event.target.getAttribute('data-filter');
-                document.querySelectorAll('#filter li').forEach(li => li.classList.remove('active'));
-                event.target.classList.add('active');
-                filterImages(category);
-            }
-        });
-    </script>
+
     <!--  Works Gallery -->
 
     <!-- Contact section -->
@@ -247,9 +288,9 @@
                             </div>
                             <div class="box-input">
                                 <label class="address"><i class="fa fa-location-pin"></i></label>
-                                <textarea name="" id="address" cols="30" rows="5" placeholder="your address.."></textarea>
+                                <textarea name="" id="address" cols="30" rows="5" placeholder="     Your address.."></textarea>
                             </div>
-                            <button class="btn-send">Contact us</button>
+                            <button class="btn-send">Contact</button>
                         </form>
                     </div>
 
@@ -312,7 +353,7 @@
 
         <div class=" copyright">
             <div class="box">
-                <p class="">Copyright © 2024 by <a href="#">jackvenilli</a>. All rights reserved.</p>
+                <p class="">Copyright © 2024 by <a href="#">Sohum Balsara</a>. All rights reserved.</p>
             </div>
             <div class="box">
                 <ul class="social-icons">
@@ -320,6 +361,7 @@
                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                     <li><a href="#"><i class="fab fa-dribble"></i></a></li>
+                </ul>
             </div>
         </div>
         </div>

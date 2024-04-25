@@ -345,30 +345,42 @@ section .box {
             text-align: center;
         }
 
-.container {
+/*.container {*/
+/*    display: inline-block;*/
+/*}*/
+
+.image {
     display: inline-block;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+    height: 220px;
+    position: relative; /* Add relative positioning */
 }
 
-        .image {
-            display: inline-block;
-            margin: 5px;
-        }
+
+
 
         /* Style the filter buttons */
-        #filter li {
-            cursor: pointer;
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #f1f1f1;
-            margin: 0 5px;
-        }
+#filter li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #e7eacb;
+    margin: 0 5px;
+}
 
         /* Add a dark background to the active button */
-        #filter li.active {
-            background-color: #666;
-            color: white;
-        }
+#filter li.active {
+    background-color: #8a2be2;
+    color: white;
+}
 
+.image-tall{
+    height: 200px;
+    margin: 10px;
+}
 
 
 
@@ -500,6 +512,14 @@ section .box {
     text-transform: capitalize;
 }
 
+.address{
+    padding-left:30px;
+
+}
+
+.fa-location-pin{
+    margin-right: 2000px;
+}
 
 contact-title{
     color: #8a2be2;
