@@ -345,21 +345,21 @@ section .box {
             text-align: center;
         }
 
-/*.container {*/
-/*    display: inline-block;*/
-/*}*/
+.container-gallery {
+    display: inline-block;
+
+}
 
 .image {
     display: inline-block;
-    margin-left: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: auto;
-    height: 220px;
-    position: relative; /* Add relative positioning */
+    margin: 5px;
+    overflow: hidden;
+
+
+    /*width: auto;*/
+    /*height: 220px;*/
+    /*position: relative; !* Add relative positioning *!*/
 }
-
-
 
 
         /* Style the filter buttons */
@@ -521,6 +521,10 @@ section .box {
     margin-right: 2000px;
 }
 
+.fa-envelope{
+    padding-bottom: 63px;
+    padding-left: 4px;
+}
 contact-title{
     color: #8a2be2;
 }

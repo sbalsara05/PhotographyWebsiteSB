@@ -23,6 +23,7 @@ body {
     color: #e7eacb;
     overflow-x: hidden !important;
     background: #fff;
+    z-index: 0;
 }
 
 p {
@@ -101,10 +102,11 @@ img {
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
 }
 
 .container {
@@ -112,6 +114,7 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 10;
 }
 
 .navbar .logo-wrapper {
