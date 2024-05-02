@@ -151,16 +151,16 @@
     </div>
     <div class="container">
         <ul id="filter">
-            <li class="active" data-filter=".all">Featured</li>
+            <li class="active" data-filter=".all">All</li>
             <li data-filter=".cars">Cars</li>
             <li data-filter=".sunrises">Sunrises</li>
             <li data-filter=".sunsets">Sunsets</li>
-            <li data-filter=".cities">Cities & Towns</li>
+            <li data-filter=".cities">Cities</li>
             <li data-filter=".towns">Towns</li>
         </ul>
     </div>
 
-    <div class="container">
+    <div class="container-gallery">
         <div class="grid-wrapper" id="imageGrid">
             <div class="image" data-filter=".cars">
                 <img src="./images/IMG_2278.jpeg" alt="" />
@@ -270,7 +270,7 @@
                         <div class="form-title">
                             <h2>Get in touch</h2>
                         </div>
-                        <form action="" method="post">
+                        <form action="contact.php" method="post">
                             <div class="one-line">
                                 <div class="box-input">
                                     <i class="far fa-user"></i>
@@ -287,8 +287,9 @@
                                 <input type="email" name="" id="email" class="text" placeholder="email..">
                             </div>
                             <div class="box-input">
-                                <label class="address"><i class="fa fa-location-pin"></i></label>
-                                <textarea name="" id="address" cols="30" rows="5" placeholder="     Your address.."></textarea>
+                                <i class="fa fa-envelope"></i>
+                                <textarea name="message" id="message" cols="30" rows="5" placeholder="Your message.."></textarea>
+
                             </div>
                             <button class="btn-send">Contact</button>
                         </form>
@@ -323,9 +324,10 @@
                 <div class="box">
                     <h3 class="title">Quick Links</h3>
                     <ul>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#works">Works</a></li>
+                        <li><a href="#services">Skills</a></li>
+                        <li><a href="#works">Gallery</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>

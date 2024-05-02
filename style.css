@@ -351,9 +351,13 @@ section .box {
 }
 
 .image {
-    display: inline-block;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
     margin: 5px;
     overflow: hidden;
+    width: 220px;
+    height: 200px;
+
 
 
     /*width: auto;*/
